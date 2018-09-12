@@ -1,7 +1,13 @@
-{% import "templates/forms.njk" as forms %}
 {% set title = 'Contact' %}
 {% extends '_layout.html' %}
 {% block content %}
 <h1>Test Template</h1>
-{% endblock %}
+<p>The forms part</p>
+<h1> THIS IS IT!!!</h1>
 
+{% import "templates/forms.njk" as forms %}
+{% import "@test/templates/test.njk" as dulcedouche %}
+{{ forms.label( 'Username' ) }}
+{{ dulcedouche.label2( 'Douchethedulce' ) }}
+
+{% endblock %}

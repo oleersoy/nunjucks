@@ -1,6 +1,7 @@
 {% import "templates/m2.njk" as m2 %}
+{% set ts1 = '<a href="http://www.google.com">lorem ipsum</a>' %}
 
-{% call m2.content( 'WHEN THE FOOFOO' ) %}
+{% call m2.content( ts1 ) %}
   <div class="TestHeader ">
     <span class="TestCounter"></span>
     <span class="TestComponent">TestBoxLeft</span>

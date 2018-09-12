@@ -1,4 +1,4 @@
 {% macro content( when ) %}
-{{ when }} foo {{ caller() }} bar
+{{ when|safe }} foo {{ caller() }} bar
 pity the {{ caller() }} foo 
 {% endmacro %}
